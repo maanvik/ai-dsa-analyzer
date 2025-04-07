@@ -1,5 +1,5 @@
 # AI-Powered DSA Mentor
-
+![WIP](https://img.shields.io/badge/status-work--in--progress-yellow)                                        
 A comprehensive application designed to assist users in learning and mastering Data Structures and Algorithms (DSA). The application leverages AI (OpenAI API) to validate user approaches to DSA problems and provides constructive feedback. If the approach is incorrect, users can receive incremental hints to guide them toward the correct solution.
 
 ## Project Overview
@@ -26,10 +26,9 @@ The application is built using:
 ## Usage
 
 1. Register an account and log in.
-2. Select a DSA problem from the categorized list.
-3. Input your approach to the problem.
-4. Receive AI-generated feedback and hints.
-5. Track your learning progress on the dashboard.
+2. Input your approach to the problem.
+3. Receive AI-generated feedback and hints.
+
 
 ## Contributing
 
