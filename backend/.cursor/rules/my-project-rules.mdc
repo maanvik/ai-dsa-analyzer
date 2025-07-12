@@ -1,0 +1,59 @@
+---
+description: AI Project Overview: DSA Analyzer App
+globs:
+  - "**/*.java"
+  - "**/*.yml"
+  - "**/*.yaml"
+  - "**/*.properties"
+  - "**/*.md"
+alwaysApply: false
+---
+
+# 🧠 AI Project Overview: DSA Analyzer App
+
+You are building a full-stack AI-powered DSA analyzer. The application helps users improve problem-solving by typing their own explanation and receiving feedback (via GPT) in the form of hints.
+
+## 🔧 Tech Stack
+- Java 17
+- Spring Boot 3.x
+- Spring Data JPA
+- PostgreSQL
+- Spring Security + JWT
+- OpenAI API (GPT-4)
+- Lombok
+
+## 🏗️ Backend Folder Structure
+Use the following structure:
+- `controller/`: For REST APIs
+- `service/`: Business logic
+- `dto/`: Request/response models (never expose entities directly)
+- `entity/`: JPA models (currently only `User`)
+- `repository/`: JPA repository interfaces
+- `security/`: JWT filter, utility, and Spring Security config
+
+## 🎯 Key Project Goals
+- Evaluate a user's natural-language explanation of a DSA problem using OpenAI
+- Return either "Correct ✅" or one indirect hint
+- "Show Answer" reveals only steps — no code
+- Input validation should reject code-like syntax in the user’s explanation
+- Stateless backend using JWT authentication
+- User entity includes UUID id, email, username, passwordHash
+
+## 👨‍🏫 AI Prompt Rules
+- Evaluation: Analyze problem + user approach, return either “Correct ✅” or one indirect hint (no solution)
+- Answer: Return only plain-English steps to solve — no syntax or code
+
+## 🔒 Design Rules
+- Use constructor injection
+- Use DTOs for all I/O
+- Use @RestController and @Service properly
+- Use Lombok for boilerplate
+- Validate input (avoid exact code logic in request)
+
+## 📦 Expected File Types
+- Java (Spring Boot)
+- DTOs using standard POJOs
+- JPA entities
+- Security using Spring Security + JWT
+
+Cursor should follow this structure and tone when generating code and responding to inline prompts.

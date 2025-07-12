@@ -1,10 +1,10 @@
-package com.ai.dsa;
+package com.ai.dsa_analyzer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class AiDsaAnalyzerApplicationTests {
+class DsaAnalyzerApplicationTests {
 
 	@Test
 	void contextLoads() {

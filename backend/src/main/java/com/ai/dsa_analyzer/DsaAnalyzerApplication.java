@@ -1,16 +1,13 @@
-package com.ai.dsa;
+package com.ai.dsa_analyzer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class AiDsaAnalyzerApplication {
+public class DsaAnalyzerApplication {
 
 	public static void main(String[] args) {
-
-		SpringApplication.run(AiDsaAnalyzerApplication.class, args);
+		SpringApplication.run(DsaAnalyzerApplication.class, args);
 	}
-
 
 }
